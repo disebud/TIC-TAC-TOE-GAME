@@ -20,7 +20,7 @@ class GameActivity : AppCompatActivity() {
     fun playGame(view: View) {
         val player1Name = intent.getStringExtra(FIRST_PLAYER)
         val player2Name = intent.getStringExtra(SECOND_PLAYER)
-        playersBanner.text = "$player1Name vs $player2Name"
+        PlayerName.text = "$player1Name vs $player2Name"
         var cellTicTacToe = arrayOf(cell1, cell2, cell3, cell4, cell5, cell6, cell7, cell8, cell9)
         for (i in cellTicTacToe.indices) {
             if (cellTicTacToe[i].tag == view.tag) {
